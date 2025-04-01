@@ -1,0 +1,73 @@
+/* Background image */
+body {
+    background: url('images/order.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glow effect */
+    margin-bottom: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Transparent Box */
+.container {
+    background: rgba(0, 0, 0, 0.5); /* More transparent */
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+    text-align: center;
+    margin: 180px auto 0 auto; /* Moves the box down */
+}
+
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent navbar */
+    padding: 10px;
+    text-align: center;
+}
+
+/* But
+tons */
+button {
+    background-color: #ff8000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff9900;
+}
+
+/* Payment Section */
+#upi-section img {
+    width: 200px;
+    border-radius: 10px;
+}

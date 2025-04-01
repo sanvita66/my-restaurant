@@ -1,0 +1,108 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f5f5f5;
+    color: white;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glow effect */
+    margin-bottom: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* Full-Page Background Image */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Dark Overlay for better text visibility */
+.hero .overlay {
+        background: rgba(0, 0, 0, 0.2); /* Increase darkness for better visibility */
+        padding: 50px;
+        border-radius: 10px;
+        position: absolute; /* Ensure it stays over the images */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2; /* Keep it above the slider */
+    }
+    
+
+/* Buttons */
+button {
+    padding: 12px 24px;
+    border: none;
+    background: #ff5722;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 10px;
+}
+
+button:hover {
+    background: #d84315;
+}
+
+
+
+/* Slider container */
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; /* Lower z-index to keep it behind text */
+}
+
+
+/* Individual slides */
+.slide {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    opacity: 0;  /* Hide all slides initially */
+    transition: opacity 1.5s ease-in-out;
+}
+
+/* Make images fill the screen */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}

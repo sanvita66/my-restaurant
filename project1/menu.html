@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Food Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header>
+        <h1>SUNNY RESUTAURANT</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="booking.html">Book a Table</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+
+        
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search food...">
+            
+          <select id="categoryFilter" onchange="filterCategory()">
+            <option value="all">All Categories</option>
+            <option value="Veg-Starters">Veg Starters</option>
+            <option value="maincourse">Main Course</option>
+            <option value="desserts">Desserts</option>
+            <option value="beverages">Beverages</option>
+        </select>
+        </div>
+
+
+
+         </header>
+        
+    
+        
+
+
+
+
+    <section id="menu">
+        <!-- Starters -->
+<div class="menu-item Veg-Starters"><img src="images/panner-tikka.jpg"><h3>Paneer Tikka</h3><p>Grilled cottage cheese cubes marinated in spices.</p><p>₹180</p>
+    <button onclick="addToCart('Paneer Tikka', 180)">Add to Cart</button></div>
+<div class="menu-item Veg-Starters"><img src="images/panner-65.png"><h3>Paneer 65</h3><p>Grilled paneer with yogurt and spices.</p><p>₹170</p>
+    <button onclick="addToCart('Paneer 65',170)">Add to Cart</button></div>
+<div class="menu-item Veg-Starters"><img src="images/Chilli-Paneer.jpg"><h3>Chilli Paneer</h3><p>Paneer tossed in a spicy Indo-Chinese sauce.</p><p>₹190</p>
+    <button onclick="addToCart('chilli panner', 190)">Add to Cart</button></div>
+<div class="menu-item Veg-Starters"><img src="images/Tandoori-Paneer.jpg"><h3>Tandoori Paneer</h3><p>Char-grilled paneer with smoky flavors.</p><p>₹200</p>
+    <button onclick="addToCart('Tandoori panner', 200)">Add to Cart</button></div>
+<div class="menu-item Veg-Starters"><img src="images/Paneermalai-Tikka.jpg"><h3> Malai Paneer Tikka</h3><p></p>Creamy paneer cooked in a tandoor.<p>₹210</p>
+    <button onclick="addToCart('Malai paneer Tikka', 210)">Add to Cart</button></div>
+<div class="menu-item Veg-Starters"><img src="images/achariPaneer-tikka.png"><h3>Achari Paneer Tikka</h3><p> Paneer with pickle-flavored spices.</p><p>₹190</p>
+    <button onclick="addToCart(' Achari Paneer Tikka', 190)">Add to Cart</button></div> 
+<div class="menu-item Veg-Starters"><img src="images/Panner-Pakora.jpg"><h3>Paneer Pakora</h3><p> Deep-fried gram flour-coated paneer.</p><p>₹160</p>
+    <button onclick="addToCart('Paneer Pakora', 160)">Add to Cart</button></div>
+<div class="menu-item Veg-Starters"><img src="images/Crispy-Paneer.jpg"><h3>Crispy Paneer Fingers</h3><p> Crunchy paneer sticks with dip</p><p>₹180</p>
+    <button onclick="addToCart(' Crispy Paneer Fingers', 180)">Add to Cart</button></div>
+<div class="menu-item Veg-Starters"><img src="images/garlicpaneer-dry.jpg"><h3> Garlic Paneer Dry </h3><p> Paneer with garlic and pepper seasoning.</p><p>₹170</p>
+    <button onclick="addToCart('Garlic Paneer Dry', 170)">Add to Cart</button></div>
+<div class="menu-item Veg-Starters"><img src="images/CrispyPaneer.jpg"><h3>Crispy Honey Chilli Paneer</h3><p>Sweet and spicy paneer bites.</p><p>₹200</p>
+    <button onclick="addToCart('Honey chilli Paneer ', 200)">Add to Cart</button></div>
+<div class="menu-item Veg-Starters"><img src="images/Mushroom-Tikka.jpg"><h3>Mushroom Tikka</h3><p>Grilled mushrooms marinated in yogurt.</p><p>₹180</p>
+    <button onclick="addToCart('Mushroom Tikka', 180)">Add to Cart</button></div>
+<div class="menu-item Veg-Starters"><img src="images/Chilli-mushroom.jpg"><h3>Chilli Mushroom</h3><p>Spicy Indo-Chinese style mushrooms.</p><p>₹190</p>
+    <button onclick="addToCart('Chilli Mushroom', 190)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Crispy Fried Mushrooms.jpg"><h3>Crispy Fried Mushrooms</h3><p>Deep-fried, crunchy mushrooms.</p><p>₹170</p>
+    <button onclick="addToCart('Crispy Fried Mushrooms', 170)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Tandoori Mushrooms.jpg"><h3> Tandoori Mushrooms</h3><p>Smoky mushrooms cooked in a tandoor.</p><p>₹200</p>
+    <button onclick="addToCart(' Tandoori Mushrooms', 200)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Stuffed Mushroom.jpg"><h3> Stuffed Mushroom</h3><p>Mushrooms filled with cheese and spices.</p><p>₹210</p>
+    <button onclick="addToCart(' Stuffed Mushroom', 210)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Mushroom Manchurian.jpg"><h3>Mushroom Manchurian</h3><p>Fried mushrooms in Manchurian sauce.</p><p>₹190</p>
+    <button onclick="addToCart('Mushroom Manchurian', 190)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Butter Garlic Mushrooms.jpg"><h3> Butter Garlic Mushrooms</h3><p>Mushrooms cooked in butter and garlic.</p><p>₹180</p>
+    <button onclick="addToCart(' Butter Garlic Mushrooms', 180)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Mushroom 65.jpg"><h3>Mushroom 65 </h3><p>Crispy, South Indian-style mushrooms.</p><p>₹170</p>
+    <button onclick="addToCart('Mushroom 65 ', 170)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Cheese Mushroom Balls.jpg"><h3>Cheese Mushroom Balls</h3><p>Mushroom and cheese deep-fried balls.</p><p>₹200</p>
+    <button onclick="addToCart('Cheese Mushroom Balls', 200)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Hot & Spicy Mushroom Stir Fry.jpg"><h3>Hot & Spicy Mushroom Stir Fry</h3><p>Mushrooms tossed in spicy sauce.</p><p>₹190</p>
+    <button onclick="addToCart('Hot & Spicy Mushroom Stir Fry', 190)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Gobi Manchurian.jpg"><h3>Gobi Manchurian </h3><p>Fried cauliflower in Manchurian sauce.</p><p>₹160</p>
+    <button onclick="addToCart('Gobi Manchurian', 160)">Add to Cart</button></div>
+ <div class="menu-item maincourse Veg-Starters"><img src="images/Chilli Gobi.jpg"><h3> Chilli Gobi</h3><p>Spicy Indo-Chinese-style cauliflower. </p><p>₹170</p>
+    <button onclick="addToCart(' Chilli Gobi', 170)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Crispy Cornflakes Gobi.jpg"><h3>Crispy Cornflakes Gobi</h3><p>Cauliflower coated in crunchy cornflakes</p><p>₹170</p>
+    <button onclick="addToCart('Crispy Cornflakes Gobi', 170)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Tandoori Gobi.jpg"><h3> Tandoori Gobi </h3><p>Grilled cauliflower with tandoori spices.</p><p>₹190</p>
+    <button onclick="addToCart('Tandoori Gobi', 190)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Gobi 65.jpg"><h3>Gobi 65</h3><p>Deep-fried, South Indian-style cauliflower.</p><p>₹170</p>
+    <button onclick="addToCart('Gobi 65', 170)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Gobi Manchurian.jpg"><h3> Gobi Pakora</h3><p>Gram flour-battered fried cauliflower.</p><p>₹150</p>
+    <button onclick="addToCart(' Gobi Pakora', 150)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Honey Chilli Gobi.jpg"><h3>Honey Chilli Gobi</h3><p>Sweet and spicy crispy cauliflower. </p><p>₹180</p>
+    <button onclick="addToCart('Honey Chilli Gobi', 180)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Garlic Gobi.jpg"><h3>Garlic Gobi</h3><p>Cauliflower in garlic sauce.</p><p>₹170</p>
+    <button onclick="addToCart('Garlic Gobi', 170)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Gobi Kurkure.jpg"><h3>Gobi Kurkure</h3><p>Extra crunchy fried gobi.</p><p>₹180</p>
+    <button onclick="addToCart('Gobi Kurkure', 180)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Achari Gobi.jpg"><h3> Achari Gobi</h3><p> Achari Gobi</p>Cauliflower with pickled flavors.  <p>₹190</p>
+  <button onclick="addToCart(' Achari Gobi', 190)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Crispy Chilli Baby Corn.jpg"><h3>Crispy Chilli Baby Corn</h3><p> Fried baby corn tossed in spicy sauce.</p><p>₹170</p>
+    <button onclick="addToCart('Crispy Chilli Baby Corn', 170)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Tandoori Baby Corn.jpg"><h3>Tandoori Baby Corn</h3><p>Char-grilled baby corn with masala. </p><p>₹190</p>
+    <button onclick="addToCart('Tandoori Baby Corn', 190)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Baby Corn 65.jpg"><h3>Baby Corn 65</h3><p>Spicy South Indian-style baby corn.</p><p>₹160</p>
+    <button onclick="addToCart('Baby Corn 65', 160)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Baby Corn Pakora.jpg"><h3>Baby Corn Pakora </h3><p>Deep-fried crispy baby corn.</p><p>₹150</p>
+    <button onclick="addToCart('Baby Corn Pakora ', 150)">Add to Cart</button></div>
+<div class="menu-item maincourse Veg-Starters"><img src="images/Garlic Baby Corn.jpg"><h3> Garlic Baby Corn</h3><p>Baby corn cooked with garlic sauce.</p><p>₹170</p>
+    <button onclick="addToCart(' Garlic Baby Corn', 170)">Add to Cart</button></div>
+ <div class="menu-item maincourse Veg-Starters"><img src="images/Honey Chilli Baby Corn.jpg"><h3>Honey Chilli Baby Corn</h3><p>Sweet and spicy baby corn.</p><p>₹180</p>
+    <button onclick="addToCart('Honey Chilli Baby Corn', 180)">Add to Cart</button></div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                      
+     <!-- Main Course -->
+        <div class="menu-item maincourse"><img src="images/briyani.jpg"><h3>Hyderabadi Biryani</h3><p>Fragant basmati rice cooked with marinated meat,spices and saffron.</p><p>₹250</p>
+            <button onclick="addToCart('Hyderabadi Biryani', 250)">Add to Cart</button></div> 
+        <div class="menu-item maincourse"><img src="images/butter-chicken.jpg"><h3>Butter Chicken</h3><p>Creamy tomato-based curry with tender chicken pieces.</p><p>₹320</p>
+            <button onclick="addToCart('Butter Chicken', 320)">Add to Cart</button></div>
+        <div class="menu-item maincourse"><img src="images/mutton-rogan-josh.jpg"><h3>Mutton Rogan Josh</h3><p>Slow-cooked mutton in a rich,aromatic gravy.</p><p>₹400</p>
+            <button onclick="addToCart('mutton Rogan Josh', 400)">Add to Cart</button></div>
+        <div class="menu-item maincourse"><img src="images/malai-kofta.jpg"><h3>Malai Kofta</h3><p>Soft panner and potato balls in a creamy cashew-base gravy.</p><p>₹200</p>
+            <button onclick="addToCart('Malai Kofta', 200)">Add to Cart</button></div>
+        <div class="menu-item maincourse"><img src="images/dal-makhani.jpg"><h3>Dal Makhani</h3><p>Slow-cooked black lentils in a buttery,spiced gravy.</p><p>₹150</p>
+            <button onclick="addToCart('Dal Makhani', 150)">Add to Cart</button></div>
+        <div class="menu-item maincourse"><img src="images/chole-bhature.jpg"><h3>Chole Bhature</h3><p>Spicy chikpea curry served with deep-fried fulffy bread.</p><p>₹120</p>
+            <button onclick="addToCart('Chole Bhature', 120)">Add to Cart</button></div>
+       
+
+
+             
+
+        <!-- Desserts -->
+        <div class="menu-item desserts"><img src="images/gulab-jamun.jpg"><h3>Gulab Jamun</h3><p>Soft,deep-fried milk dumplings soaked in sugar syrup.</p><p>₹50</p><button>Add to Cart</button></div>
+        <div class="menu-item desserts"><img src="images/rasmalai.png"><h3>Rasmalai</h3><p>Soft Paneer discs soaked in sweet,saffron-falvored milk.</p><p>₹80</p><button>Add to Cart</button></div>
+        <div class="menu-item desserts"><img src="images/jalebi.jpg"><h3>Jalebi</h3><p>Crispy, deep-fried spirals soaked in sugar syrup.</p><p>₹40</p><button>Add to Cart</button></div>
+        <div class="menu-item desserts"><img src="images/carrot-halwa.jpg"><h3>Carrot Halwa</h3><p>Sweet grated carrot dessert cooke with milk and ghee.</p><p>₹70</p><button>Add to Cart</button></div>
+        <div class="menu-item desserts"><img src="images/kheer.jpg"><h3>Kheer</h3><p>Creamy rice pudding flavored with cardamom and nuts.</p><p>₹60</p><button>Add to Cart</button></div>
+
+        <!-- Beverages -->
+        <div class="menu-item beverages"><img src="images/chai.jpg"><h3>Masala Chai</h3><p>Aromatic indian spiced tea made with milk and tea leaves.</p><p>₹20</p><button>Add to Cart</button></div>
+        <div class="menu-item beverages"><img src="images/lassi.jpg"><h3>Lassi</h3><p>Refershing yogurt-based drink, sweet or slated.</p><p>₹50</p><button>Add to Cart</button></div>
+        <div class="menu-item beverages"><img src="images/coffee.jpg"><h3>Filter Coffee</h3><p>Rich and flavoful brewed beverages made from coffee beans.</p><p>₹30</p><button>Add to Cart</button></div>
+        <div class="menu-item beverages"><img src="images/badam-milk.jpg"><h3>Badam Milk</h3><p>Warm or chilled milk infused with alamonds and saffron.</p><p>₹60</p><button>Add to Cart</button></div>
+    </section>
+
+    
+
+
+    <script src="menu.js"></script>
+</body>
+</html>

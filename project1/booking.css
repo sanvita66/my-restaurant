@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('images/order-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darker for better contrast */
+    padding: 15px 0;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+/* Styling the Restaurant Name */
+header h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glow effect */
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Booking Section */
+#book-table {
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+}
+
+/* Fixing "Book a Table" Heading */
+#book-table h2 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Form Design */
+#book-table form {
+    max-width: 500px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background for visibility */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Fields */
+#book-table input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px; /* More spacing */
+    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+}
+
+#book-table input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Booking Button */
+#book-table button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #ff6600, #ff3300);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#book-table button:hover {
+    background: linear-gradient(to right, #cc5200, #cc2900);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+    #book-table form {
+        width: 90%;
+    }
+}
